@@ -14,4 +14,9 @@ export class EventController {
         const event = await this.api.get(`/events/${id}`);
         this.view.renderDetails(new Event(event));
     }
+    async book (id){
+        await this.api.post(`/bestelungs`, {event_id: id, seats: 1});
+        alert("Danke! Bestelling geplaatst!");
+        this.loadEvents();
+    }
 }
