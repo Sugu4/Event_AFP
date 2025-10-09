@@ -21,6 +21,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "bestellung")
+@Data
 
 public class Bestellung {
 
