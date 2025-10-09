@@ -14,6 +14,6 @@ public class Bezahlart {
     @Column(name = "bezahlart_id")
     private Long id;
 
-    @Column(name = "bezahlart_name", nullable = false, length = 255 VARCHAR)
+    @Column(name = "bezahlart_name", nullable = false, length = 255)
     private String name;
 }

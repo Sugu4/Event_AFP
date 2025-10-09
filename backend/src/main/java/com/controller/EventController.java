@@ -10,11 +10,12 @@ import org.springframework.http.ResponseEntity;
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("/api/events")
+@RequestMapping("/api/v1/events")
 public class EventController {
-
+    
     private final EventService eventService;
-    public EventController(EventService eventService) {
+    
+    public EventController(EventService eventService) { 
         this.eventService = eventService;
     }
 
@@ -26,10 +27,9 @@ public class EventController {
         } catch (NoSuchElementException e) {
             return ResponseEntity.notFound().build();
         
-        } catch (Exception e) {
-            return ResponseEntity.internalServerError().body("Ein unerwarteter Fehler ist aufgetreten: " + e.getMessage());
-            
-    }
+        } catch (Exception e) { 
+            return ResponseEntity.internalServerError().body(null);
 
-    
+        }
+    }
 }
