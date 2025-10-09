@@ -4,11 +4,11 @@ export class EventView {
         this.root = root;
     }
 
-    renderList(Events) {
+    renderList(events) {
         this.root.innerHTML = html.eventList(events);
     }
 
-    renderDetail(event) {
+    renderDetails(events) {
         this.root.innerHTML = html.eventDetail(events);
     }
 }
