@@ -1,18 +1,7 @@
 package com.eventapi.model; 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Id;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Column;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.CascadeType;
-
-import org.hibernate.annotations.CreationTimestamp;
-
+import jakarta.persistence;
+import lombok.Data;
 import java.time.LocalDateTime;
 
 import java.util.ArrayList;
