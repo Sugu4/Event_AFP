@@ -1,3 +1,4 @@
+import {html} from '../ui/templates.js';
 export class EventView {
     constructor(root) {
         this.root = root;
