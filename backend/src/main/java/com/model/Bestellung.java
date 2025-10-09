@@ -1,8 +1,20 @@
 package main.java.com.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.CascadeType;
+
 import java.time.LocalDateTime;
+
 import java.util.ArrayList;
+
 import java.util.List;
 
 @Entity
@@ -14,7 +26,8 @@ public class Bestellung {
     @Column(name = "bestellung_id")
     private Integer bestellungId;
 
-    @Column(name = "bestellung_datum", nullable = false)
+    @Column(name = "bestellung_datum", nullable = false, updatable = false)
+    @CreationTimestamp
     private LocalDateTime bestellungDatum;
 
     // Beziehung zu Kunde (n:1)
