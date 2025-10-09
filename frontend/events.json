@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "name": "Weihnachtskonzert",
+    "datum": "2025-12-20",
+    "description": "Festliches Konzert der Akademie"
+
+  },
+  {
+    "id": 2,
+    "name": "Jazz-Abend",
+    "datum": "2025-11-15",
+    "description": "Live-Jazz mit Studentenband"
+  }
+]

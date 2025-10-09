@@ -11,13 +11,13 @@ export class EventController {
     }
 
     async loadEvents() {
-        const data = await this.api.get('/events');
+        const data = await this.api.get('/events.json');
         this.events = data.map(d => new Event(d));
         this.view.renderList(this.events);
     }
 
     async select(id) {
-        const event = await this.api.get(`/events/${id}`);
+        const event = await this.api.get(`/events.json/${id}`);
         this.view.renderDetails(new Event(event));
     }
 

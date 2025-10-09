@@ -5,7 +5,7 @@ export const html = {
       ${list.map(event => `
         <div class="card" data-id="${event.id}">
           <h3>${event.name}</h3>
-          <p>${new Date(event.datum).toLocaleDateString('de-DE')}</p>
+          <p>${new Date(event.formattedDate)}</p>
         </div>`).join('')}
     </div>`,
 

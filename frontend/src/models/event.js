@@ -5,4 +5,7 @@ export class Event {
         this.description = description;
         this.datum = datum;
     }
+    get formattedDate() {
+        return new Date(this.datum).toLocaleDateString('de-DE');
+    }
 }
