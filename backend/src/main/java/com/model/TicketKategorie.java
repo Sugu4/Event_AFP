@@ -1,15 +1,21 @@
-package com.eventapi.model;
+package com.model;
 
-import jakarta.persistence;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import java.math.BigDecimal; // Prezise Währungsberechnung
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 
+import java.math.BigDecimal;
+
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "ticket_kategorie")
 @Data
 
 public class TicketKategorie {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "tk_id")
@@ -27,10 +33,9 @@ public class TicketKategorie {
     @Column(name = "tk_beschreibung", length = 500)
     private String beschreibung;
 
-    // --- Fremdschlüssel ---
-
     // Eine TicketKategorie gehört zu EINEM Event (N:1-Beziehung)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "event_id", nullable = false)
     private Event event;
+    }
 }

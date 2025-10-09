@@ -1,7 +1,9 @@
-package com.eventapi.model;
+package com.model;
 
-import jakarta.persistence;
+import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -9,7 +11,7 @@ import java.time.LocalDateTime;
 @Data
 
 public class Event {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "event_id")
@@ -27,8 +29,6 @@ public class Event {
     @Column(name = "is_published", nullable = false)
     private Boolean isPublished = false;
 
-    // --- Fremdschlüssel (FKs) ---
-
     // Ein Event hat EINEN Organisator (N:1-Beziehung)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "org_id", nullable = false)
@@ -43,7 +43,7 @@ public class Event {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "event_typ_id", nullable = false)
     private EventTyp eventTyp;
-    
+
     // Anmerkung: Die 1:N-Verknüpfung zu TicketKategorie kommt später, da diese 
     // 'Event'-ID als FK enthalten
 }

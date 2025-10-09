@@ -1,11 +1,11 @@
-package com.eventapi.model; 
+package com.model;
 
-import jakarta.persistence;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Data;
+
 import java.time.LocalDateTime;
-
 import java.util.ArrayList;
-
 import java.util.List;
 
 @Entity

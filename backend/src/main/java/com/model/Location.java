@@ -1,7 +1,8 @@
-package com.eventapi.model;
+package com.model;
 
-import jakarta.persistence;
+import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "location")

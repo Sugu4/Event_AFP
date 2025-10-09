@@ -1,13 +1,12 @@
-package com.eventapi.model;
+package com.model;
 
-import jakarta.persistence;
 import lombok.Data;
 
 @Entity
 @Table(name = "organisator")
 @Data
 public class Organisator {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "org_id")
@@ -21,7 +20,7 @@ public class Organisator {
 
     @Column(name = "org_iban", length = 22)
     private String iban;
-    
+
     // Adressfelder
     @Column(name = "org_strasse", length = 255)
     private String strasse;
