@@ -21,11 +21,8 @@ public class Event {
     @Column(name = "event_beschreibung_kurz", length = 500)
     private String beschreibungKurz;
 
-    @Column(name = "start_datum_zeit", nullable = false)
-    private LocalDateTime startDatumZeit;
-
-    @Column(name = "end_datum_zeit")
-    private LocalDateTime endDatumZeit;
+    @Column(name = "datum", nullable = false)
+    private LocalDateTime Datum;
 
     @Column(name = "is_published", nullable = false)
     private Boolean isPublished = false;
