@@ -7,5 +7,5 @@ import com.model.Event;
 
 @Repository
 public interface EventRepository extends JpaRepository<Event, Long> {
-    
+
 }

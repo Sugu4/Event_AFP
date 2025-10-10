@@ -3,6 +3,8 @@ package com.model;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collection;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -51,6 +53,10 @@ public class Event {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "event_typ_id", nullable = false)
     private EventTyp eventTyp;
+
+    public Collection<Object> getTicketKategorien() {
+        return new ArrayList<>();
+    }
 
     // Anmerkung: Die 1:N-Verknüpfung zu TicketKategorie kommt später, da diese 
     // 'Event'-ID als FK enthalten
