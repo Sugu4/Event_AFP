@@ -16,7 +16,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.aspectj.weaver.Position;
+import javax.swing.text.Position;
+
 import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
@@ -34,20 +35,17 @@ public class Bestellung {
     @CreationTimestamp
     private LocalDateTime bestellungDatum;
 
-    // Beziehung zu Kunde (n:1)
+   
     @ManyToOne
     @JoinColumn(name = "kunde_id", nullable = false)
     private Kunde kunde;
 
-    // Positionen mit Menge, Preis etc.
     @OneToMany(mappedBy = "bestellung", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Position> positionen = new ArrayList<>();
+    private List<Bestellposition> positionen = new ArrayList<>();
 
-    // Zahlungen
     @OneToMany(mappedBy = "bestellung", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Bezahlung> zahlungen = new ArrayList<>();
 
-    // --- Konstruktoren ---
     public Bestellung() {
     }
 
@@ -56,7 +54,6 @@ public class Bestellung {
         this.kunde = kunde;
     }
 
-    // --- Getter & Setter ---
     public Integer getBestellungId() {
         return bestellungId;
     }
@@ -81,11 +78,11 @@ public class Bestellung {
         this.kunde = kunde;
     }
 
-    public List<Position> getPositionen() {
+    public List<Bestellposition> getPositionen() {
         return positionen;
     }
 
-    public void setPositionen(List<Position> positionen) {
+    public void setPositionen(List<Bestellposition> positionen) {
         this.positionen = positionen;
     }
 
@@ -97,14 +94,14 @@ public class Bestellung {
         this.zahlungen = zahlungen;
     }
 
-    // --- Hilfsmethoden, um Positionen konsistent hinzuzufügen ---
+    
     public void addPosition(Position position) {
-        positionen.add(position);
-        position.setBestellung(this);
+        positionen.add((Bestellposition) position);
+        ((Bestellposition) position).setBestellung(this);
     }
 
     public void removePosition(Position position) {
         positionen.remove(position);
-        position.setBestellung(null);
+        ((Bestellposition) position).setBestellung(null);
     }
 }

@@ -1,4 +1,4 @@
-package main.java.com.controller;
+package com.controller;
 
 public class TicketService {
     

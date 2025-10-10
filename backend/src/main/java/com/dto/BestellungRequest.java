@@ -1,5 +1,5 @@
-package main.java.com.dto;
+package com.dto;
 
 public class BestellungRequest {
-    
+	
 }

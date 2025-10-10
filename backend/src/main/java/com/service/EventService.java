@@ -1,8 +1,8 @@
 package com.service;
 
-import com.eventapi.model.Event;
-import com.eventapi.repository.EventRepository;
-import com.eventapi.repository.TicketKategorieRepository;
+import com.model.Event;
+import com.repository.EventRepository;
+import com.repository.TicketKategorieRepository;
 import org.springframework.stereotype.Service;
 import java.util.NoSuchElementException;
 

@@ -3,9 +3,9 @@ package com.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.model.Event;
+import com.model.TicketKategorie;
 
 @Repository
-public interface EventRepository extends JpaRepository<Event, Long> {
-    
+public interface TicketKategorieRepository extends JpaRepository<TicketKategorie, Long> {
+
 }
