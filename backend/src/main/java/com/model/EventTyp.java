@@ -1,6 +1,11 @@
 package com.model;
 
-import jakarta.persistence;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
@@ -13,6 +18,6 @@ public class EventTyp {
     @Column(name = "event_typ_id")
     private Long id;
 
-     @Column(name = "event_typ_name", nullable = false, length = VARCHAR(255))
+     @Column(name = "event_typ_name", nullable = false, length =255)
      private String name;
 }

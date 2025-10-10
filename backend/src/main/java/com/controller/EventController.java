@@ -1,4 +1,4 @@
-package com.eventapi.controller;
+package com.controller;
 
 import com.eventapi.model.Event;
 import com.eventapi.service.EventService;

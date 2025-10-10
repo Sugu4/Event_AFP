@@ -1,4 +1,4 @@
-package com.eventapi.service;
+package com.service;
 
 import com.eventapi.model.Event;
 import com.eventapi.repository.EventRepository;

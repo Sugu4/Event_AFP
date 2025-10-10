@@ -1,1 +1,1 @@
-package main.java.com.service;
+package com.service;
