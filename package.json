@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "frontend app for PWA 'Event AFP'",
   "main": "index.js",
+  "source": "frontend/index.html",
   "scripts": {
+    "dev": "parcel",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Sugu4/Event_AFP/issues"
   },
-  "homepage": "https://github.com/Sugu4/Event_AFP#readme"
+  "homepage": "https://github.com/Sugu4/Event_AFP#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
 }
