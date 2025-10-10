@@ -22,12 +22,10 @@ public class Ticket {
     private Long id;
 
     @Column(name = "qr_code", unique = true, nullable = false, length = 255)
-    private String qrCode; // Wird beim Einlass gescannt
+    private String qrCode;
 
     @Column(name = "ist_gescannt", nullable = false)
-    private Boolean istGescannt = false; // Einlasskontrolle
-
-    // --- Fremdschlüssel ---
+    private Boolean istGescannt = false;
 
     // Ein Ticket gehört zu EINER Bestellposition (N:1)
     @ManyToOne(fetch = FetchType.LAZY)
