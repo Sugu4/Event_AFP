@@ -23,8 +23,6 @@ public class EventService {
         Event event = eventRepository.findById(eventId)
             .orElseThrow(() -> new NoSuchElementException("Event nicht gefunden: " + eventId));
 
-        // 2. Hier müsste die Logik zur Verfügbarkeitsberechnung folgen.
-        // Diese Logik hängt stark von der Datenbankstruktur und den Geschäftsregeln ab.
         
         return event;
     }
