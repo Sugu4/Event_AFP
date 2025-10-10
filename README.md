@@ -1,4 +1,4 @@
-# 🎫 Event-Ticketing-Plattform API (Backend)
+# 🎫 Event-Ticketing-Plattform API
 
 Dies ist das Backend der Event-Ticketing-Plattform, entwickelt als Teil eines Umschulungsprojekts. Die API dient als zentrale Geschäftslogik für die Verwaltung von Veranstaltungen, Ticketkontingenten und dem sicheren Bestellprozess.
 
@@ -34,7 +34,6 @@ Um das Backend lokal zu starten und zu entwickeln, folgen Sie diesen Schritten:
 
 ### 1. MariaDB einrichten
 
-Da wir MariaDB über XAMPP verwenden, ist die Konfiguration einfach.
 
 1.  **XAMPP starten:** Öffnen Sie das XAMPP Control Panel und starten Sie das Modul **"MySQL"** (MariaDB).
 2.  **Datenbank erstellen:** Melden Sie sich über phpMyAdmin (oder PowerShell) an und erstellen Sie die Datenbank, die in der `application.properties` konfiguriert ist.
