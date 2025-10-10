@@ -1,4 +1,4 @@
-package com.eventapi;
+package com.model;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
