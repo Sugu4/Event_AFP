@@ -1,1 +1,24 @@
-body { font-family: Arial, sans-serif; }
+#app {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 200px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px #ccc;
+    overflow-y: auto;
+}
