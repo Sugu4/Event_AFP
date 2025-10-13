@@ -3007,3 +3007,15 @@
 /node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
 /node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
 /node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
+/.parcel-cache/4bf74c6ffbbb1552-AssetGraph
+/.parcel-cache/550a8450db79484a-AssetGraph
+/.parcel-cache/b6625786a2d0f822-BundleGraph
+/.parcel-cache/de799dc5c457d34c-RequestGraph
+/dist/frontend.3bf07db5.css
+/dist/frontend.3bf07db5.css.map
+/dist/frontend.67d0935e.js
+/dist/frontend.67d0935e.js.map
+/dist/frontend.191028b1.js
+/dist/frontend.191028b1.js.map
+/dist/main_event.96283fab.png
+/.parcel-cache/snapshot-de799dc5c457d34c.txt

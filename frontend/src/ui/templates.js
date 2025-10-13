@@ -1,7 +1,10 @@
-import {row, col} from "../utils.js";
+import {row, col, css} from "../utils.js";
 
 function title(block) {
-    return row(`<h1>${block.value}</h1>`)
+    console.log(block.options)
+    const tag = block.options.tag ?? 'h1';
+    const styles = block.options.styles ?? '';
+    return row(col(`<${tag}>${block.value}</${tag}>`), css(styles));
 }
 
 function text(block) {
