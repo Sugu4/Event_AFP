@@ -8,12 +8,15 @@ function title(block) {
 }
 
 function text(block) {
-    return row(`<p>${block.value}</p>`)
+    const tag = block.options.tag ?? 'p';
+    const styles = block.options.styles ?? '';
+    return row(col(`<${tag}>${block.value}</${tag}>`), css(styles));
 }
 
 function columns(block) {
     const html = block.value.map(item => col(item))
-    return row( html.join(''))
+    const styles = block.options.styles ?? '';
+    return row( html.join(''), css(styles))
 }
 
 function image(block) {
