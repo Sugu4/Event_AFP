@@ -1,17 +1,35 @@
-export const html = {
-    eventList: (list) => `
-    <h1>Events</h1>
-    <div class="events">
-      ${list.map(event => `
-        <div class="card" data-id="${event.id}">
-          <h3>${event.name}</h3>
-          <p>${new Date(event.formattedDate)}</p>
-        </div>`).join('')}
-    </div>`,
+function title(block) {
+    return `
+    <div class="row">
+        <div class="col-sm">
+            <h1> ${block.value}</h1>
+        </div>
+    </div> 
+`
+}
 
-    eventDetail: (event) => `
-    <h1>${event.name}</h1>
-    <p>${event.description}</p>
-    <button data-book="${event.id}">Buchen</button>
-    <a href="#" data-back>← Zurück</a>`
-};
+function text(block) {
+    return `
+    <div class="row">
+            <div class="col-sm">
+                <p> ${block.value}</p>
+            </div>
+        </div> 
+     `
+}
+
+function columns(block) {
+    const html = block.value.map(item => `<div class="col-sm">${item}</div>`)
+    return `<div class="row">
+            ${html.join('')}
+        </div>
+    `
+}
+
+function image(block) {
+    return `
+     <div class="row">
+      <img src="${block.value}" >
+       </div>`
+}
+export const templates = { title, text, columns, image };
