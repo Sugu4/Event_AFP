@@ -2,7 +2,6 @@
   "name": "event_afp",
   "version": "1.0.0",
   "description": "frontend app for PWA 'Event AFP'",
-  "main": "index.js",
   "source": "frontend/index.html",
   "scripts": {
     "dev": "parcel",
