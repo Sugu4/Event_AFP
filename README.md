@@ -63,5 +63,3 @@ Um das Backend lokal zu starten und zu entwickeln, folgen Sie diesen Schritten:
 ### 3. Anwendung starten
 
     .\mvnw.cmd spring-boot:run
-
-
