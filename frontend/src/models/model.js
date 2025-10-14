@@ -98,6 +98,10 @@ export const model = [
             }
         }
     },
+    //Tools feed
+    {
+
+    },
     // Footer
     {
         type: 'contacts',
