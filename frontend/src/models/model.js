@@ -100,7 +100,37 @@ export const model = [
     },
     //Tools feed
     {
-
+        type: 'columns',
+        value: [
+            /* 1. Search */
+            `<div>
+         <h5>Search</h5>
+         <input type="text" class="form-control form-control-sm" placeholder="Event name...">
+       </div>`,
+            /* 2. Category List */
+            `<div>
+         <h5>Category List</h5>
+         <ul class="list-unstyled">
+           <li><a href="#rock">Rock</a></li>
+           <li><a href="#jazz">Jazz</a></li>
+           <li><a href="#classic">Classic</a></li>
+         </ul>
+       </div>`,
+            /* 3. Events-Calendar */
+            `<div>
+         <h5>Events-Calendar</h5>
+         <input type="month" class="form-control form-control-sm">
+       </div>`,
+            /* 4. LogIn / Register */
+            `<div>
+         <h5>LogIn / Register</h5>
+         <button class="btn btn-primary btn-sm w-100">LogIn</button>
+         <button class="btn btn-outline-primary btn-sm w-100 mt-2">Register</button>
+       </div>`
+        ],
+        options: {
+            styles: {height: '100%', gap: '10px'}
+        }
     },
     // Footer
     {
@@ -108,32 +138,36 @@ export const model = [
         value: [
             {icon: 'mail', text: 'imperia_of_events@gmail.com'},
             {icon: 'phone', text: '+49 176 12345678'},
-            {icon: 'language', text: 'Deutsch'}
+            {icon: 'language', text: 'Deutsch'},
+            {
+                icon: 'copyright',
+                text: '© 2025 Veranstaltung Köln | <a href="#impressum">Impressum</a> | <a href="#datenschutz">Datenschutz</a>'
+            }
         ],
         options: {
             styles: {
                 marginLeft: '220px',
-                marginTop: '40px',
+                marginTop: '20px',
                 background: 'linear-gradient(135deg, rgba(66,133,244,.8) 0%, rgba(52,168,83,.8) 100%)',
-                padding: '20px',
+                padding: '15px',
                 color: '#fff',
                 borderRadius: '8px',
                 fontSize: '1em'
             }
         }
-    },
-    {
-        type: 'text',
-        value: '© 2025 Veranstaltung Köln | <a href="#impressum">Impressum</a> | <a href="#datenschutz">Datenschutz</a>',
-        options: {
-            tag: 'div',
-            styles: {
-                marginLeft: '220px',
-                textAlign: 'center',
-                fontSize: '0.85em',
-                marginTop: '10px',
-                marginBottom: '30px'
-            }
-        }
     }
+    // {
+    //     type: 'text',
+    //     value: '© 2025 Veranstaltung Köln | <a href="#impressum">Impressum</a> | <a href="#datenschutz">Datenschutz</a>',
+    //     options: {
+    //         tag: 'div',
+    //         styles: {
+    //             marginLeft: '220px',
+    //             textAlign: 'center',
+    //             fontSize: '0.85em',
+    //             marginTop: '10px',
+    //             marginBottom: '30px'
+    //         }
+    //     }
+    // }
 ]
