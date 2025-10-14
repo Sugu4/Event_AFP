@@ -1,7 +1,7 @@
 // import image from './assets/main_event.png'
 export const model = [
     {
-        type: 'title', value: 'Welcome to your event!', options:
+        type: 'title', value: 'Veranstaltungen di du liebst... ', options:
             {
                 tag: 'h2',
                 styles: {
@@ -18,7 +18,13 @@ export const model = [
             }
     },
 
-    {type: 'text', value: 'Event1. Description for Event 1 ', options:
+    {
+        type: 'contacts', value:[
+            {icon:'mail', text : 'imperia_of_events@gmail.com'},
+            {icon:'phone', text : '+49 176 12345678'},
+            {icon:'language', text : 'Deutsch'}
+        ]
+        , options:
             {
                 tag: 'h4',
                 styles: {
@@ -32,7 +38,8 @@ export const model = [
                     'margin-top': '20px',
                     'margin-bottom': '20px'
                 }
-            }},
+            }
+    },
     {
         type: 'columns', value: [
             'column1',
