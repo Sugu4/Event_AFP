@@ -10,10 +10,12 @@ const panel = document.querySelector('#panel');
 /* ➊ insert menu items */
 panel.insertAdjacentHTML('beforeend', `
   <div class="p-2">
-    <b>☰ Menu</b><br>
+    <b>☰ Menu</b><br> 
     <a href="#events">Events</a><br>
     <a href="#calendar">Calendar</a><br>
-    <a href="#login">LogIn</a>
+    <a href="#login">LogIn</a><br>
+    <br> 
+    <button id="hide-btn" class="btn btn-sm btn-outline-secondary w-100 mt-2">Hide</button> 
   </div>
 `);
 
@@ -22,6 +24,7 @@ const tab = document.querySelector('#menu-tab');
 tab.addEventListener('click', () => {
     panel.classList.toggle('open');
 });
+document.querySelector('#hide-btn').addEventListener('click', () => panel.classList.toggle('open'));
 
 model.forEach(block => {
     const html = templates[block.type](block);

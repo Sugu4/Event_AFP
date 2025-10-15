@@ -1,9 +1,13 @@
 import {row, col, css, contact_icon, contact_text} from "../utils.js";
 
 function title(block) {
-    const tag = block.options.tag ?? 'h1';
-    const styles = block.options.styles ?? '';
-    return row(col(`<${tag}>${block.value}</${tag}>`), css(styles));
+    const tag   = block.options.tag ?? 'h1';
+    const style = block.options.styles ?? '';
+
+    const classAttr = (typeof style === 'string' && style) ? `class="${style}"` : '';
+    const styleAttr = (typeof style === 'object') ? `style="${css(style)}"` : '';
+
+    return `<${tag} ${classAttr} ${styleAttr}>${block.value}</${tag}>`;
 }
 
 function title_text(block) {
