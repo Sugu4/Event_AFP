@@ -1,8 +1,13 @@
 import {row, col, css, contact_icon, contact_text} from "../utils.js";
 
 function title(block) {
-    console.log(block.options)
     const tag = block.options.tag ?? 'h1';
+    const styles = block.options.styles ?? '';
+    return row(col(`<${tag}>${block.value}</${tag}>`), css(styles));
+}
+
+function title_text(block) {
+    const tag = block.options.tag ?? 'p';
     const styles = block.options.styles ?? '';
     return row(col(`<${tag}>${block.value}</${tag}>`), css(styles));
 }
@@ -16,7 +21,7 @@ function text(block) {
 function columns(block) {
     const html = block.value.map(item => col(item))
     const styles = block.options.styles ?? '';
-    return row( html.join(''), css(styles))
+    return row(html.join(''), css(styles))
 }
 
 function image(block) {
@@ -34,4 +39,4 @@ function contacts(block) {
 }
 
 
-export const templates = { title, text, columns, image, contacts };
+export const templates = {title, text, columns, image, contacts, title_text};

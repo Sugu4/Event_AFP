@@ -4,21 +4,11 @@ export const model = [
         value: 'Veranstaltung Köln',
         options: {
             tag: 'h1',
-            styles: {
-                background: 'linear-gradient(135deg, #4285f4 0%, #34a853 100%)',
-                padding: '20px',
-                color: '#fff',
-                textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
-                textAlign: 'center',
-                borderRadius: '8px',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
-                fontWeight: 'bold',
-                margin: '0 0 10px 0'
-            }
+            styles: 'main-title'
         }
     },
     {
-        type: 'text',
+        type: 'title_text',
         value: 'Erlebe die besten Events in Köln – Konzerte, Kultur & mehr!',
         options: {
             tag: 'p',
@@ -36,28 +26,11 @@ export const model = [
         }
     },
 
-    //Service Panel
     {
         type: 'columns',
-        value: [
-            '<b>☰ Menu</b>',
-            '<a href="#events">Events</a>',
-            '<a href="#calendar">Calendar</a>',
-            '<a href="#login">LogIn</a>'
-        ],
+        value: [/* items */],
         options: {
-            styles: {
-                width: '200px',
-                position: 'fixed',
-                left: 0,
-                top: '140px',
-                bottom: 0,
-                background: '#f5f5f5',
-                borderRight: '1px solid #ddd',
-                padding: '15px',
-                fontSize: '0.95em',
-                lineHeight: '1.8'
-            }
+            styles: ''
         }
     },
 
