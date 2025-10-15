@@ -90,12 +90,19 @@ export const model = [
            <li><a href="#classic">Classic</a></li>
          </ul>
        </div>`,
-            /* 3. Events-Calendar */
+            /* 3. Event List */
+            `<div>
+         <h5>Events List</h5>
+         <ul class="list-unstyled">
+           <li><a href="#getAllEvents">See all events</a></li>
+         </ul>
+       </div>`,
+            /* 4. Events-Calendar */
             `<div>
          <h5>Events-Calendar</h5>
          <input type="month" class="form-control form-control-sm">
        </div>`,
-            /* 4. LogIn / Register */
+            /* 5. LogIn / Register */
             `<div>
          <h5>LogIn / Register</h5>
          <button class="btn btn-primary btn-sm w-100">LogIn</button>
