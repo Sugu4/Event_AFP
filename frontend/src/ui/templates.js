@@ -11,9 +11,7 @@ function title(block) {
 }
 
 function title_text(block) {
-    const tag = block.options.tag ?? 'p';
-    const styles = block.options.styles ?? '';
-    return row(col(`<${tag}>${block.value}</${tag}>`), css(styles));
+    return text(block);
 }
 
 function text(block) {

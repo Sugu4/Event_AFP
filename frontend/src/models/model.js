@@ -11,18 +11,19 @@ export const model = [
         type: 'title_text',
         value: 'Erlebe die besten Events in Köln – Konzerte, Kultur & mehr!',
         options: {
-            tag: 'p',
+            tag: 'h4',
             styles: {
                 background: 'linear-gradient(135deg, #4285f4 0%, #34a853 100%)',
-                padding: '20px',
-                textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
-                textAlign: 'center',
-                borderRadius: '8px',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
-                fontWeight: 'bold',
-                margin: '-10px 0 20px 0',
+                padding: '0px',
+                'text-shadow': '1px 1px 2px rgba(0, 0, 0, 0.3)',
+                'text-align': 'center',
+                'border-radius': '8px',
+                'box-shadow': '0 1px 1px rgba(0, 0, 0, 0.2)',
+                'font-weight': 'bold',
+                margin: '0',
                 color: '#fff'
             }
+                // 'title-text'
         }
     },
 
@@ -102,7 +103,7 @@ export const model = [
        </div>`
         ],
         options: {
-            styles: {height: '100%', gap: '10px'}
+            styles: {height: '100%', width: "100%", gap: '10px'}
         }
     },
     // Footer
@@ -129,18 +130,4 @@ export const model = [
             }
         }
     }
-    // {
-    //     type: 'text',
-    //     value: '© 2025 Veranstaltung Köln | <a href="#impressum">Impressum</a> | <a href="#datenschutz">Datenschutz</a>',
-    //     options: {
-    //         tag: 'div',
-    //         styles: {
-    //             marginLeft: '220px',
-    //             textAlign: 'center',
-    //             fontSize: '0.85em',
-    //             marginTop: '10px',
-    //             marginBottom: '30px'
-    //         }
-    //     }
-    // }
 ]
