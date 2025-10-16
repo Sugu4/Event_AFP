@@ -65,6 +65,7 @@ spring.datasource.url=jdbc:mariadb://localhost:3306/event_db
 spring.datasource.username=app_user 
 spring.datasource.password=ihr_passwort
 spring.jpa.hibernate.ddl-auto=update
+´´´
 
 
 ### B. Anwendung starten (Kommando)
