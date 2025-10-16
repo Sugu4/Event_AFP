@@ -1,5 +1,5 @@
-import { templates } from './src/ui/templates.js';
-import { model } from './src/models/model.js';
+import {templates} from '../../src/ui/templates.js';
+import {model} from '../../src/models/model.js';
 
 const header = document.querySelector('#header-zone');
 const events = document.querySelector('#events-zone');

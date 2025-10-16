@@ -41,19 +41,19 @@ export const model = [
         value: [
             // column_1
             `<div style="cursor:pointer;" onclick="alert('Rock-Konzert')">
-       <img src="./assets/event_1.png" alt="Rock am Ring" style="width:100%;border-radius:6px;">
+       <img src="../../assets/event_1.png" alt="Rock am Ring" style="width:100%;border-radius:6px;">
        <h4>🎸 Rock am Ring</h4>
        <p>12.12.2025<br>Köln Arena</p>
      </div>`,
             // column_2
             `<div style="cursor:pointer;" onclick="alert('Jazz-Abend')">
-       <img src="assets/event_2.png" alt="Jazz-Abend" style="width:100%;border-radius:6px;">
+       <img src="../../assets/event_2.png" alt="Jazz-Abend" style="width:100%;border-radius:6px;">
        <h4>🎺 Jazz-Abend</h4>
        <p>15.11.2025<br>Club B</p>
      </div>`,
             // column_3
             `<div style="cursor:pointer;" onclick="alert('Weihnachtsmarkt')">
-       <img src="assets/event_3.png" alt="Weihnachtsmarkt" style="width:100%;border-radius:6px;">
+       <img src="../../assets/event_3.png" alt="Weihnachtsmarkt" style="width:100%;border-radius:6px;">
        <h4>🎄 Weihnachtsmarkt</h4>
        <p>20.12.2025<br>Heumarkt</p>
      </div>`
@@ -94,7 +94,7 @@ export const model = [
             `<div>
          <h5>Events List</h5>
          <ul class="list-unstyled">
-           <li><a href="#getAllEvents">See all events</a></li>
+           <li><a href="../../pages/events/events.html">See all events</a></li>
          </ul>
        </div>`,
             /* 4. Events-Calendar */
@@ -107,7 +107,8 @@ export const model = [
          <h5>LogIn / Register</h5>
          <button class="btn btn-primary btn-sm w-100">LogIn</button>
          <button class="btn btn-outline-primary btn-sm w-100 mt-2">Register</button>
-       </div>`
+       </div>`,
+            `<div><h5>Admin</h5><a className="btn btn-sm btn-outline-danger" href="../../pages/admin/admin.html">Add Event</a></div>`
         ],
         options: {
             styles: {height: '100%', width: "100%", gap: '10px'}

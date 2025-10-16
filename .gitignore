@@ -1,4 +1,6 @@
 # Default ignored files
+frontend/dist/
+frontend/.parcel-cache/
 /shelf/
 /workspace.xml
 # Editor-based HTTP Client requests
