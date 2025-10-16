@@ -65,15 +65,15 @@ spring.datasource.url=jdbc:mariadb://localhost:3306/event_db
 spring.datasource.username=app_user 
 spring.datasource.password=ihr_passwort
 spring.jpa.hibernate.ddl-auto=update
-´´´
-
+```
 
 ### B. Anwendung starten (Kommando)
 
-.\mvnw.cmd spring-boot:run
-
+`mvnw.cmd spring-boot:run`
 
 ### C. Testaufruf (Funktionalität)
 
 - URL: http://localhost:8080/api/v1/events/1  
 - Erwartet: HTTP 200 OK mit JSON-Daten (wenn Event 1 existiert) oder 404 Not Found.
+
+---
