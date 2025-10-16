@@ -2,7 +2,7 @@ const API = 'http://localhost:8080/api/v1/events'; // adjust if your backend run
 
 async function loadEvents() {
     try {
-        const res = await fetch(API);
+        const res = await fetch("http://127.0.0.1:8080/api/v1/events");
         if (!res.ok) throw new Error(res.status);
         const data = await res.json(); // List<EventDTO>
         renderTable(data); // Call renderTable with the fetched data

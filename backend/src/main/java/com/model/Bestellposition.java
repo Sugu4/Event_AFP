@@ -1,5 +1,7 @@
-package com.eventapi.model;
+package com.model;
 
+import com.model.Bestellung;
+import com.model.TicketKategorie;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.math.BigDecimal;

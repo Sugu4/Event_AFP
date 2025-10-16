@@ -5,7 +5,7 @@ async function loadSingleEvent() {
     const id = params.get('id');
     if (!id) return;
     try {
-        const res = await fetch(`${API}/${id}`);
+        const res = await fetch(`$http://127.0.0.1:8080/api/v1/events/${id}`);
         if (!res.ok) throw new Error(res.status);
         const ev = await res.json(); // Event (entity)
         renderCard(ev);
