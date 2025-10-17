@@ -34,7 +34,7 @@ public class Event {
     private String beschreibungKurz;
 
     @Column(name = "datum", nullable = false)
-    private LocalDateTime Datum;
+    private LocalDateTime datum;
 
     @Column(name = "is_published", nullable = false)
     private Boolean isPublished = false;

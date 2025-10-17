@@ -17,22 +17,20 @@ async function loadSingleEvent() {
 
 function renderCard(ev) {
     const card = document.getElementById('detail-card');
-    card.innerHTML =
-
-        <div className="card-header">
-            <h3>${ev.titel}</h3>
-        </div>
-    <div className="card-body">
-        <p><strong>Date:</strong> ${new Date(ev.datum).toLocaleString('de-DE')}</p>
-        <p><strong>Location:</strong> ${ev.location.name}</p>
-        <p><strong>Type:</strong> ${ev.eventTyp.name}</p>
-        <p><strong>Organizer:</strong> ${ev.organisator.name}</p>
-        <p><strong>Published:</strong> ${ev.isPublished ? 'Yes' : 'No'}</p>
-        <p><strong>Available tickets:</strong> ${ev.availableTickets}</p>
-    </div>
-    <div className="card-footer text-end">
-        <a className="btn btn-primary" href="events.html">Back to list</a>
-    </div>
-    ;
+    card.innerHTML = `
+  <div class="card-header">
+    <h3>${ev.titel}</h3>
+  </div>
+  <div class="card-body">
+    <p><strong>Date:</strong> ${new Date(ev.datum).toLocaleString('de-DE')}</p>
+    <p><strong>Location:</strong> ${ev.location.name}</p>
+    <p><strong>Type:</strong> ${ev.eventTyp.name}</p>
+    <p><strong>Organizer:</strong> ${ev.organisator.name}</p>
+    <p><strong>Published:</strong> ${ev.isPublished ? 'Yes' : 'No'}</p>
+    <p><strong>Available tickets:</strong> ${ev.availableTickets}</p>
+  </div>
+  <div class="card-footer text-end">
+    <a class="btn btn-primary" href="events.html">Back to list</a>
+  </div>`;
 }
 loadSingleEvent();
