@@ -1,20 +1,12 @@
 package com.model;
 
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import java.util.List;
 
 @Entity
 @Table(name = "event")
@@ -54,9 +46,16 @@ public class Event {
     @JoinColumn(name = "event_typ_id", nullable = false)
     private EventTyp eventTyp;
 
-    public Collection<Object> getTicketKategorien() {
-        return new ArrayList<>();
-    }
+//    public Collection<Object> getTicketKategorien() {
+//        return new ArrayList<>();
+//    }
+//
+//    @OneToMany(mappedBy = "event", fetch = FetchType.LAZY)
+//    private List<TicketKategorie> ticketKategorien = new ArrayList<>();
+//
+//    public List<TicketKategorie> getTicketKategorien() {
+//        return ticketKategorien;
+//    }
 
     // Anmerkung: Die 1:N-Verknüpfung zu TicketKategorie kommt später, da diese 
     // 'Event'-ID als FK enthalten

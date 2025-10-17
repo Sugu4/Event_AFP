@@ -18,19 +18,8 @@ public class EventService {
     }
 
     public Event getEventDetailsWithAvailability(Long eventId) {
-        // 1. Event aus der Datenbank abrufen
-        Event event = eventRepository.findById(eventId)
+        return eventRepository.findByIdWithDetails(eventId)
                 .orElseThrow(() -> new NoSuchElementException("Event nicht gefunden: " + eventId));
-
-        // 2. Load associated ticket categories
-        event.getTicketKategorien().size(); // Force initialization of lazy collection
-
-        // 3. Load other lazy relationships
-        event.getOrganisator().getId();
-        event.getLocation().getId();
-        event.getEventTyp().getId();
-
-        return event;
     }
 
     public List<Event> getAllEvents() {

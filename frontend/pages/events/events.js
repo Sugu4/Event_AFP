@@ -24,7 +24,7 @@ function renderTable(events) {
             <td>${ev.eventTypName}</td>
             <td>${ev.organisatorName}</td>
             <td>
-                <a class="btn btn-sm btn-outline-primary" href="event-detail.html?id=${ev.id}">Details</a>
+                <a class="btn btn-sm btn-outline-primary" href="../event-detail/event-detail.html?id=${ev.id}">Details</a>
             </td>
         `;
         tbody.appendChild(tr);
