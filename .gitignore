@@ -2966,7 +2966,6 @@ frontend/.parcel-cache/
 /node_modules/weak-lru-cache/README.md
 /node_modules/weak-lru-cache/rollup.config.js
 /node_modules/.package-lock.json
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
 /dist/frontend.2fbebc02.css
 /dist/frontend.2fbebc02.css.map
 /dist/frontend.d344c3c9.js
@@ -2974,7 +2973,6 @@ frontend/.parcel-cache/
 /dist/frontend.fe817fef.js
 /dist/frontend.fe817fef.js.map
 /dist/index.html
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
 /backend/target/classes/application.properties
 /backend/target/classes/com/model/Bestellposition.class
 /backend/target/classes/com/model/Bestellung.class
@@ -3003,12 +3001,6 @@ frontend/.parcel-cache/
 /backend/target/classes/com/repository/TicketRepository.class
 /backend/target/classes/com/controller/TicketService.class
 /backend/target/classes/com/service/TicketService.class
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
-/node_modules/@parcel/core/test/fixtures/glob-like/[entry].js
 /.parcel-cache/4bf74c6ffbbb1552-AssetGraph
 /.parcel-cache/550a8450db79484a-AssetGraph
 /.parcel-cache/b6625786a2d0f822-BundleGraph
@@ -3021,3 +3013,5 @@ frontend/.parcel-cache/
 /dist/frontend.191028b1.js.map
 /dist/main_event.96283fab.png
 /.parcel-cache/snapshot-de799dc5c457d34c.txt
+!/dist/
+!/.parcel-cache/
