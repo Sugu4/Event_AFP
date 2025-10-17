@@ -1,4 +1,4 @@
-package com.controller; // ordner Struktur
+package com.controller;
 
 public class BestellungController {
     
