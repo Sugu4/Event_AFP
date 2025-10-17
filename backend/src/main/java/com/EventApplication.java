@@ -21,7 +21,7 @@ public class EventApplication {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.setAllowCredentials(true);
         corsConfiguration.setAllowedOrigins(Arrays.asList(
-                "http://localhost:63342/", "http://127.0.0.1:63342"));
+                "http://localhost:5500/", "http://127.0.0.1:5500"));
         corsConfiguration.setAllowedHeaders(Arrays.asList("Origin",
                 "Access-Control-Allow-Origin", "Content-Type",
                 "Accept", "Authorization", "Origin, Accept", "X-Requested-With",
